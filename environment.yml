@@ -1,0 +1,11 @@
+name: myenv
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - fastqc
+  - pbmm2
+  - sniffles
+  - survivor
+  - bcftools
+  - samplot
