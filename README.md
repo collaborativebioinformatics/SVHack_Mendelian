@@ -10,12 +10,15 @@ In the case of a diseased child of healthy parents, all de-novo SVs are promisin
 In practice, this will yield false positives due to noise inherent in SV calling and merging. Using publicly available trio(s), we will create a ‘naive’ de-novo SV candidate list, and work on a QC-framework tool that creates a local assembly of every de-novo SV candidate locus in each member of the trio to review the ‘de-novo’ status. 
 
 ## Workflow
+![Workflow](https://github.com/collaborativebioinformatics/SVHack_Mendelian/assets/24875399/6bc8a877-4fc5-4fde-8ac4-567f9d2565c3)
 
 
 
-<img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/aim1.png?raw=true">
 
-<img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/aim2.png?raw=true">
+## Pipeline
+
+Snakemake 
+
 
 ## Initial Results
 
