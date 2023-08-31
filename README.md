@@ -11,9 +11,15 @@ In practice, this will yield false positives due to noise inherent in SV calling
 
 ## Workflow
 
+![Workflow](https://github.com/collaborativebioinformatics/SVHack_Mendelian/assets/24875399/b6d5f5e9-e774-496a-9ff9-cdf69d947cca)
 
 
 <img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/aim1.png?raw=true">
 
 <img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/aim2.png?raw=true">
+
+## Pipeline
+
+Snakemake 
+
 
