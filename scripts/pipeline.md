@@ -14,7 +14,7 @@ ls *vcf > sample_files
 ./SURVIVOR merge sample_files 1000 1 1 1 1 50 sample_merged.vcf
 ```
 
-# VBT-Trio
+# VBT-Trio (https://github.com/sbg/VBT-TrioAnalysis/tree/master)
 
 ```bash
 # Working on ppyd
