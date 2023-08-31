@@ -17,3 +17,20 @@ In practice, this will yield false positives due to noise inherent in SV calling
 
 <img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/aim2.png?raw=true">
 
+## Initial Results
+
+Sniffles multisample vs Sniffles singlesample + SURVIVOR
+
+<img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/sniffles.png?raw=true">
+
+<img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/survivor.png?raw=true">
+
+Potential de-novo Deletion
+
+<img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/de_novo.png?raw=true">
+
+
+## Next steps
+
+- Investigate more the reasons for different numbers (Sniffles multi vs SURVIVOR)
+- Local Assemblies of SV candidates
