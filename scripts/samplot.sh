@@ -16,10 +16,10 @@ tail -n +2 "$archive" | while IFS= read -r line
   
   time samplot plot \
       -n <name bam file> <name bam file> <name bam file> \
-      -b <path of bam file>/.bam \
-        <path of bam file>/.bam \
-        <path of bam file>/.bam \
-      -o 4_115928726_115931880.png \
+      -b <path of bam file.bam> \
+        <path of bam file.bam> \
+        <path of bam file.bam> \
+      -o <outputname.png> \
       -c "$chrom" \
       -s "$start" \
       -e "$end" \
