@@ -1,4 +1,6 @@
-# SVHack_Mendelian
+# SalsaValentina
+
+<img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/salsa.png?raw=true">
 
 ## Background
 Mendelian disorders, aka monogenic diseases, are undiagnosed by exome sequencing in ~50-75% of cases [https://www.nature.com/articles/ncomms15824]. A sizable portion of mendelian diseases are caused by SVs, (including complex SVs), but the extent of this is unclear [Schuy et al. 2022]. In the absence of reliable databases for phenotypically relevant SVs - like gnomAD or clinvar for SNVs - the interpretation of variants is often challenging. 
