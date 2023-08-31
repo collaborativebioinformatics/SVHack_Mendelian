@@ -28,7 +28,7 @@ Sniffles multisample vs Sniffles singlesample + SURVIVOR
 
 <img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/survivor.png?raw=true">
 
-Potential de-novo Deletion
+### Potential de-novo Deletion
 
 <img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/de_novo.png?raw=true">
 
@@ -36,4 +36,5 @@ Potential de-novo Deletion
 ## Next steps
 
 - Investigate more the reasons for different numbers (Sniffles multi vs SURVIVOR)
-- Local Assemblies of SV candidates
+
+### Local Assemblies of SV candidates
