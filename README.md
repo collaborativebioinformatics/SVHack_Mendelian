@@ -1,7 +1,7 @@
 # ~~~ SalsaValentina ~~~
 
 <img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/salsa2.png?raw=true">
-<img src="WhatsApp Image 2023-08-31 at 13.47.27.jpeg"> 
+<img src="WhatsApp Image 2023-08-31 at 13.47.27.jpeg?raw=true"> 
 
 
 
