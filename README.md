@@ -117,6 +117,9 @@ A mendelian inconsistent deletion was identified in HG002 at chr7:142,786,222-14
 
 <img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/results/ratio_violation_survivor.png?raw=true">
 
+Discrepancy: integrated calling (Sniffles) reports 0/0 for reference alleles, Survivor reports ./. 
+For now: Continue with Sniffles file.
+
 ### Figure 2. Literature-known de novo Deletion at chr17:53340465-53340571 visualized with samplot
 
 <img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/results/de_novo_literature_lift_samplot.png">
