@@ -3,11 +3,11 @@
 
 # SalsaValentina: SVs detection & filtering pipeline to identify putative de novo variants from mendelian inconsistencies. 
 
-# Background
+## Background
 
 Mendelian inconsistency in SV calls can indicate two possibilities: challenges in SV calling leading to false positive or negative calls across the trio, or a genuine de novo SV. De novo SVs are rare, with an estimated rate of 0.16 de novo SVs per genome in healthy individuals. Despite their rarity, de novo SVs have been associated with human diseases such as [Autism Spectrum Disorder](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8059337/), [Hereditary Pulmonary Alveolar Proteinosis](https://www.nature.com/articles/srep43469) and [Alzheimer's disease](https://www.nature.com/articles/nature20814). In addition, some benchmarking studies have used the rarity of de novo structural variants to support the validity of their SV calls under the assumption than any calls inconsistent with Mendelian inheritance are incorrect ([Zook et al., 2021](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8454654/); [Parikh et at., 2016](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-016-2366-2); [Eberth et al.,2021](https://www.science.org/doi/10.1126/science.abf7117)). Here, we aim to investigate putative de novo SVs to either validate them as genuine, which could assist in diagnosis of rare disease, or use their properties to inform strategies for more accurate SV calling. 
 
-# Method: Verification of de-novo SVs from trios via visualization and local assembly of complex variants
+## Method: Verification of de-novo SVs from trios via visualization and local assembly of complex variants
 
 Candidate de novo SVs can be identified from trios as variants that do not follow Mendelian inheritance patterns. Mendelian inconsistencies are identified when a child has a genotype that is not possible given the genotypes of the parents, for example, when a child is homozygous for an allele that does not exist in either parent. True de novo SVs are expected to be rare; however, in practice, a high rate of inconsistent SVs will be identified, indicating false positives or negatives due to noise inherent in SV calling and merging. SalsaValentina creates a ‘naive’ de novo SV candidate list, and developed a QC-framework tool that enables users to visualize the alignments in inconsistent SV regions across the trio and create a local assembly of every de novo SV candidate locus to aid in confirmation of the variant as either a de novo SV or an incorrect call. 
 
