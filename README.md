@@ -55,6 +55,7 @@ snakemake --use-conda
 * SURVIVOR Version 1.0.7
 * bcftools Version 1.17
 * samplot Version 1.3.0
+* Hifiasm Version 0.19.6
 
 ## Input Files
 
