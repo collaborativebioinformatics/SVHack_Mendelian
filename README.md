@@ -145,9 +145,8 @@ Pairwise alignment of hg38 reference (y-axis) vs assembled contig (x-axis) as ou
 
 # Future work
 
-
-## Fully automate the evaluation of SV-containing contigs
-## Test assembly in the most complex genomic regions
+### - Fully automate the evaluation of SV-containing contigs
+### - Test assembly in the most complex genomic regions
 
 
 ## Contributors
