@@ -1,4 +1,4 @@
-# SalsaValentina: SVs Detector to capture promising candidates responsible for disease association
+# SalsaValentina: SVs detection & filtering pipeline to capture promising candidates responsible of de novo diseases
 
 <img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/salsaValentinaIlustration.jpeg?raw=true">
 
