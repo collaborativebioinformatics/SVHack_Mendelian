@@ -70,6 +70,10 @@ cd workflow
 snakemake --use-conda
 ```
 
+Candidate de novo SVs can be filtered using `workflow/scripts/filtering_denovo_sniffles.py` and `workflow/scripts/filtering_denovo_survivor.py`
+
+Local assemblies for regions of interest can be generated using `workflow/scripts/localassembly.py`
+
 ## Input Files
 
 ```
