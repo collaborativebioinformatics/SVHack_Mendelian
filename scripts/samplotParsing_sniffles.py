@@ -56,7 +56,5 @@ for i in range(len(sniffles_hg002_3_4)):
     df=pd.DataFrame([new_row], columns=['ID', 'CHROM', 'START', 'END', 'TYPE', 'MENDELIAN_VIOLATION'])
     #concat the 2 dataframes
     samplot_sniffles_input_hg002_3_4=pd.concat([samplot_sniffles_input_hg002_3_4, df])
-#print dataframe
-print(samplot_sniffles_input_hg002_3_4)
 #save the data frame as a csv
 samplot_sniffles_input_hg002_3_4.to_csv('samplot_sniffles_input_hg002_3_4_complete.csv', index=False)
