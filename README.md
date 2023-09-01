@@ -127,19 +127,28 @@ A mendelian inconsistent deletion was identified in HG002 at chr7:142,786,222-14
 
 ### Figure 4 
 HG002_chr17.asm.bp.hap1.p_ctg.gfa
+
+Pairwise alignment of hg38 reference (y-axis) vs assembled contig (x-axis) using YASS. 
+Perfect agreement, no SV! 
+
 ![image](https://github.com/collaborativebioinformatics/SVHack_Mendelian/assets/24875399/3190f44d-6f88-44fc-84f8-a4e0433cad7e)
 
 ### Figure 5 
 
+Pairwise alignment of hg38 reference (y-axis) vs assembled contig (x-axis) as output of our pipeline using pafr.
 ![c0b211c1-1c1b-483b-b6b1-3b7d89f8d58c](https://github.com/collaborativebioinformatics/SVHack_Mendelian/assets/24875399/4b5692bc-a785-4e43-b20b-b5a08bae1d66)
 
 
 # Future work
 
 
+## Fully automate the evaluation of SV-containing contigs
+## Test assembly in the most complex genomic regions
+
+
 ## Contributors
 
-* Wolfram Höps (Lead) - wolfram.hoeps@gmail.com
+* Wolfram Höps - wolfram.hoeps@gmail.com
 * Rajarshi Mondal - rajarshimondal92@gmail.com
 * Alison Diaz-Cuevas - alison.m.b.g@gmail.com
 * Marlon Arciniega-Sanchez - aldarchez26@gmail.com
