@@ -12,7 +12,8 @@ Mendelian inconsistency in SV calls can indicate two possibilities: challenges i
 Candidate de novo SVs can be identified from trios as variants that do not follow Mendelian inheritance patterns. :warning: Explain this more. True de novo SVs are expected to be rare; however, in practice, a high rate of inconsistent SVs will be identified, indicating false positives or negatives due to noise inherent in SV calling and merging. Using a publicly available trio :warning: Citation, we created a ‘naive’ de novo SV candidate list, and developed a QC-framework tool that enables users to visualize the alignments in inconsistent SV regions across the trio and create a local assembly of every de novo SV candidate locus to aid in confirmation of the variant as either a de novo SV or an incorrect call. 
 
 ## Workflow
-![Workflow](https://github.com/collaborativebioinformatics/SVHack_Mendelian/assets/24875399/6bc8a877-4fc5-4fde-8ac4-567f9d2565c3)
+
+<img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/jdh/SVoverview.drawio.png">
 
 
 # Usage
@@ -90,3 +91,18 @@ Sniffles multisample vs Sniffles singlesample + SURVIVOR
 - Investigate more the reasons for different numbers (Sniffles multi vs SURVIVOR)
 
 ### Local Assemblies of SV candidates
+
+# Please cite our work!
+
+:warning: Add citation
+
+## Contributors
+
+* Wolfram Höps (Lead)
+* Rajarshi Mondal - rajarshimondal92@gmail.com
+* Alison Diaz-Cuevas - alison.m.b.g@gmail.com
+* Marlon Aldair	Arciniega Sanchez
+* Janet	Doolittle-Hall - janet.doolittle-hall@q2labsolutions.com
+* David	Enoma
+* Mauricio Moldes - mauricio.moldes@crg.eu
+* Tania	Sepulveda-Morales - sepulvedamortania@gmail.com
