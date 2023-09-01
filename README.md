@@ -31,16 +31,21 @@ To merge the SV calls into a single VCF, two methods are compared: multi-sample 
 ## Workflow
 ![Workflow](https://github.com/collaborativebioinformatics/SVHack_Mendelian/assets/24875399/6df69a30-a54e-44b2-82ff-54d79f01f049)
 
-# Usage
-```
-snakemake --use-conda
 
-```
 ## Installation
 
 ```
 git clone https://github.com/collaborativebioinformatics/SVHack_Mendelian.git
 ```
+
+
+# Usage
+```
+cd workflow
+snakemake --use-conda
+
+```
+
 
 ## Dependencies
 
