@@ -35,7 +35,7 @@ for i in range(len(sniffles_hg002_3_4)):
             #adding the category and value to the dictionary "information"
             information[key]=values
 
-    #create a row for our dataframe that will include the values we need aka id, position, end
+    #create a row for our dataframe that will include the values we need aka id, chromosome, start, end, type and mendelian violation classification
     new_row=[]
     #add the ID for the variant in order to keep track of which variant we are seeing
     new_row.append(sniffles_hg002_3_4.ID[i])
