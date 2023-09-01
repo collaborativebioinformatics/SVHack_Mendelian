@@ -30,7 +30,7 @@ To merge the SV calls into a single VCF, two methods are compared: multi-sample 
 
 ## Workflow
 
-<img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/SVoverview.drawio.png">
+![Workflow](https://github.com/collaborativebioinformatics/SVHack_Mendelian/assets/24875399/544e0868-e12a-49e9-9970-7b18d011d6fb)
 
 # Usage
 
