@@ -43,7 +43,6 @@ git clone https://github.com/collaborativebioinformatics/SVHack_Mendelian.git
 ```
 cd workflow
 snakemake --use-conda
-
 ```
 
 
