@@ -105,7 +105,6 @@ SalsaValentina compares two different methods of merging SV calls within the tri
 A potential de novo deletion was identified in HG002 at chr7:142,786,222-142,796,849 by the Sniffles multi-sample calling method (Fig. 2). The deletion was called as hetrozygous with 12 reads supporting the reference and 13 supporting the variant in HG002, while it was homozygous reference supported by 45 and 44 reads respectively in HG003 and HG004. In addition, GIAB previously reported a de novo deletion in HG002 at chr17:51417826–51417932 as part of their v0.6 SV benchmark set, which was derived from high confidence calls supported by multiple methods (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8454654/). This deletion was not observed in the PacBio dataset using Sniffles to call SVs.  
 
 ### Figure 1. Comparison of Mendelian Inconsistencies in Sniffles multi-sample calling and single-sample calling followed by SURVIVOR.
-<img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/results/de_novo_literature_igv.png" height=50, width=50>
 
 <img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/sniffles.png?raw=true">
 
