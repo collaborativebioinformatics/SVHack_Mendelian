@@ -1,4 +1,4 @@
-# ~~~ SalsaValentina: SVs Detector to capture promising candidates responsible for disease association ~~~
+# SalsaValentina: SVs Detector to capture promising candidates responsible for disease association
 
 <img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/salsaValentinaIlustration.jpeg?raw=true">
 
