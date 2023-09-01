@@ -41,7 +41,9 @@ rule sniffles_multi_call:
     conda:
         "environment.yml"
     shell:
-        "sniffles --input {input.snf1} {input.snf2} {input.snf3} --vcf {output.vcf}"
+        """
+        sniffles --input {input.snf1} {input.snf2} {input.snf3} --vcf {output.vcf}
+        """
         
 # Rule for merging variants using Survivor
 rule survivor_merge:
