@@ -134,10 +134,8 @@ HG002_chr17.asm.bp.hap1.p_ctg.gfa
 ![c0b211c1-1c1b-483b-b6b1-3b7d89f8d58c](https://github.com/collaborativebioinformatics/SVHack_Mendelian/assets/24875399/4b5692bc-a785-4e43-b20b-b5a08bae1d66)
 
 
-# Please cite our work!
-
 # Future work
-:warning: Add citation
+
 
 ## Contributors
 
