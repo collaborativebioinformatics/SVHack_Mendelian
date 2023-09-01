@@ -1,3 +1,4 @@
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=21&pause=1000&color=F76B1E&width=435&lines=Welcome+To+Our+Github+Page;We+are+Team+Salsa+Valentina)](https://git.io/typing-svg)
 
 <img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/WhatsApp Image 2023-08-31 at 20.02.13.jpeg?raw=true">
 
