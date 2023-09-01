@@ -26,7 +26,7 @@ Candidate de novo SVs can be identified from trios as variants that do not follo
 SalsaValentina is an integrated pipeline for Mendelian inconsistency of SVs. We demonstrate the pipeline using the Genome in a Bottle (GIAB) Ashkenazim trio ( [HG002 son](https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/HG002_NA24385_son/PacBio_CCS_15kb_20kb_chemistry2/GRCh38), [HG003 father](https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/HG003_NA24149_father/PacBio_CCS_15kb_20kb_chemistry2/GRCh38) & [HG004 mother](https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/HG004_NA24143_mother/PacBio_CCS_15kb_20kb_chemistry2/GRCh38)) sequenced on Sequel II System with 2.0 chemistry and aligned to the GRCh38 genome reference. SVs are called using the [Sniffles2](https://github.com/fritzsedlazeck/Sniffles) variant caller. 
 
 
-To merge the SV calls into a single VCF, two methods are compared: multi-sample SV calling using Sniffles2 and variant merging with [SURVIVOR](https://github.com/fritzsedlazeck/SURVIVOR) :warning: parameters for survivor? ([Jeffares, D. et al., 2017](https://www.nature.com/articles/ncomms14061)). Each of the resulting merged VCFs is annotated for Mendelian inconsistencies using the [mendelian plugin of BCFtools](https://samtools.github.io/bcftools/howtos/plugin.mendelian.html) ([Heng Li, 2011](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3198575/)). The positions of each SV inconsistent with Mendelian inheritance is extracted from the merged VCFs and [Samplot](https://github.com/ryanlayer/samplot) is used to visualize the region of each variant in each member of the trio ([Belyeu, J.R.,2021](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02380-5)). :warning: Local assembly... 
+To merge the SV calls into a single VCF, two methods are compared: multi-sample SV calling using Sniffles2 and variant merging with [SURVIVOR] using default parameters (https://github.com/fritzsedlazeck/SURVIVOR)([Jeffares, D. et al., 2017](https://www.nature.com/articles/ncomms14061)). Each of the resulting merged VCFs is annotated for Mendelian inconsistencies using the [mendelian plugin of BCFtools](https://samtools.github.io/bcftools/howtos/plugin.mendelian.html) ([Heng Li, 2011](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3198575/)). The positions of each SV inconsistent with Mendelian inheritance is extracted from the merged VCFs and [Samplot](https://github.com/ryanlayer/samplot) is used to visualize the region of each variant in each member of the trio ([Belyeu, J.R.,2021](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02380-5)). :warning: Local assembly... 
 
 ## Workflow
 ![Workflow](https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/workflow.jpg)
@@ -98,13 +98,11 @@ Edit the input paths in workflow/Snake.config.yaml
 * SAMPLES: A list of sample names. These should correspond to the names of the input BAM files. For example: `["HG002", "HG003", "HG004"]`
 * REF_GENOME: Path to the reference FASTA file. For example: `reference/genome.fa`
 
-:warning: Example usage
-
 ## Results
 
 SalsaValentina compares two different methods of merging SV calls within the trio: multi-sample calling using Sniffles and merging using SURVIVOR. The two methods give different numbers of overall SV calls within the trio as well as percentages of SVs that are inconsistent with Medelian inheritance. We found approximately 19,000 SV calls using Sniffles multi-sample calling, of which 5.2% were Mendelian inconsistent and approximately 32,000 SV calls by SURVIVOR, of which 2.4% are inconsistent (Fig. 1). The different number of total SV calls between the two methods is from differences in genotype assignment for some locations (either missing or reference) between the tools as well as size filtering of SVs of at least 50 bp by SURVIVOR. In addition, SURVIVOR was able to merge additional variant types, such as duplications, inversions, and translocations that were not included in the Sniffles calls. :warning: More explanation needed...
 
-A potential de novo deletion was identified in HG002 at chr7:142,786,222-142,796,849 (:warning: Do I have the coords right? couldn't find the ones in the slack message..) by the Sniffles multi-sample calling method (Fig. 2). The deletion was called as hetrozygous with 12 reads supporting the reference and 13 supporting the variant in HG002, while it was homozygous reference supported by 45 and 44 reads respectively in HG003 and HG004. In addition, GIAB previously reported a de novo deletion in HG002 at chr17:51417826–51417932 as part of their v0.6 SV benchmark set, which was derived from high confidence calls supported by multiple methods (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8454654/). This deletion was not observed in the PacBio dataset using Sniffles to call SVs.  
+A potential de novo deletion was identified in HG002 at chr7:142,786,222-142,796,849 by the Sniffles multi-sample calling method (Fig. 2). The deletion was called as hetrozygous with 12 reads supporting the reference and 13 supporting the variant in HG002, while it was homozygous reference supported by 45 and 44 reads respectively in HG003 and HG004. In addition, GIAB previously reported a de novo deletion in HG002 at chr17:51417826–51417932 as part of their v0.6 SV benchmark set, which was derived from high confidence calls supported by multiple methods (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8454654/). This deletion was not observed in the PacBio dataset using Sniffles to call SVs.  
 
 ### Figure 1. Comparison of Mendelian Inconsistencies in Sniffles multi-sample calling and single-sample calling followed by SURVIVOR.
 <img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/results/de_novo_literature_igv.png" height=50, width=50>
@@ -113,23 +111,15 @@ A potential de novo deletion was identified in HG002 at chr7:142,786,222-142,796
 
 <img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/survivor.png?raw=true">
 
-### Figure 2. Potential de novo Deletion
-
-The top panel shows a deletion in HG002 at chr7:142,757,892-142,824,789, which is absent in the parents (father HG003 middle panel, and mother HG004 bottom panel).
-
-<img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/jdh/de_novo_chr7.png">
-
-### Figure 3. Potential de nove Deletion at chr7:142786222-142796849 visualized with samplot
+### Figure 2. Potential de nove Deletion at chr7:142786222-142796849 visualized with samplot
 
 <img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/results/de_novo_ours_samplot.png">
 
-### Figure 4. Potential de nove Deletion at chr17:53340465-53340571 visualized with samplot
+### Figure 3. Potential de nove Deletion at chr17:53340465-53340571 visualized with samplot
 
 <img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/results/de_novo_literature_lift_samplot.png">
 
-## Next steps
 
-- Investigate more the reasons for different numbers (Sniffles multi vs SURVIVOR)
 
 ### Local Assemblies of SV candidates
 
@@ -139,7 +129,7 @@ The top panel shows a deletion in HG002 at chr7:142,757,892-142,824,789, which i
 
 ## Contributors
 
-* Wolfram Höps (Lead)
+* Wolfram Höps (Lead) - wolfram.hoeps@gmail.com
 * Rajarshi Mondal - rajarshimondal92@gmail.com
 * Alison Diaz-Cuevas - alison.m.b.g@gmail.com
 * Marlon Arciniega-Sanchez - aldarchez26@gmail.com
