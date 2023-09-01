@@ -138,7 +138,7 @@ The top panel shows a deletion in HG002 at chr7:142,757,892-142,824,789, which i
 * Wolfram Höps (Lead)
 * Rajarshi Mondal - rajarshimondal92@gmail.com
 * Alison Diaz-Cuevas - alison.m.b.g@gmail.com
-* Marlon Aldair Arciniega Sanchez - aldarchez26@gmail.com
+* Marlon Arciniega-Sanchez - aldarchez26@gmail.com
 * Janet	Doolittle-Hall - janet.doolittle-hall@q2labsolutions.com
 * David	Enoma (Data Engineer/ Sys Admin) - david.enoma@ucalgary.ca
 * Mauricio Moldes - mauricio.moldes@crg.eu
