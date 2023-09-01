@@ -93,7 +93,7 @@ A potential de novo deletion was identified in HG002 at chr7:142,786,222-142,796
 
 The top panel shows a deletion in HG002 at chr7:142,757,892-142,824,789, which is absent in the parents (father HG003 middle panel, and mother HG004 bottom panel).
 
-<img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/de_novo.png?raw=true">
+<img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/jdh/de_novo_chr7.png">
 
 
 ## Next steps
