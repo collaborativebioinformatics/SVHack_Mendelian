@@ -51,14 +51,10 @@ snakemake --use-conda
 
 ## Dependencies
 
-:warning: Version numbers?
-
-* fastqc
-* pbmm2
-* Sniffles2
-* SURVIVOR
-* bcftools
-* samplot
+* Sniffles2 Version 2.0.7
+* SURVIVOR Version 1.0.7
+* bcftools Version 1.17
+* samplot Version 1.3.0
 
 ## Input Files
 
