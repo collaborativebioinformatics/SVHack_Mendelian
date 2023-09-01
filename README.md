@@ -29,8 +29,7 @@ SalsaValentina is an integrated pipeline for Mendelian inconsistency of SVs. We 
 To merge the SV calls into a single VCF, two methods are compared: multi-sample SV calling using Sniffles2 and variant merging with SURVIVOR :warning: parameters for survivor? (DOI:10.1038/NCOMMS14061, https://github.com/fritzsedlazeck/SURVIVOR). Each of the resulting merged VCFs is annotated for Mendelian inconsistencies using the mendelian plugin to bcftools (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3198575/, https://samtools.github.io/bcftools/howtos/plugin.mendelian.html). The positions of each SV inconsistent with Mendelian inheritance is extracted from the merged VCFs and samplot is used to visualize the region of each variant in each member of the trio (https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02380-5, https://github.com/ryanlayer/samplot). :warning: Local assembly... 
 
 ## Workflow
-
-![Workflow](https://github.com/collaborativebioinformatics/SVHack_Mendelian/assets/24875399/544e0868-e12a-49e9-9970-7b18d011d6fb)
+![Workflow](https://github.com/collaborativebioinformatics/SVHack_Mendelian/assets/24875399/6df69a30-a54e-44b2-82ff-54d79f01f049)
 
 # Usage
 
