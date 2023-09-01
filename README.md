@@ -132,8 +132,7 @@ For now: Continue with Sniffles file.
 
 ### Figure 4 
 
-Pairwise alignment of hg38 reference (y-axis) vs assembled contig (x-axis) using YASS. 
-Perfect agreement, no SV! 
+Pairwise alignment of hg38 reference (y-axis) vs assembled contig (x-axis) using YASS.  
 
 ![image](https://github.com/collaborativebioinformatics/SVHack_Mendelian/assets/24875399/3190f44d-6f88-44fc-84f8-a4e0433cad7e)
 
