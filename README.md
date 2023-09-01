@@ -103,6 +103,6 @@ Sniffles multisample vs Sniffles singlesample + SURVIVOR
 * Alison Diaz-Cuevas - alison.m.b.g@gmail.com
 * Marlon Aldair	Arciniega Sanchez
 * Janet	Doolittle-Hall - janet.doolittle-hall@q2labsolutions.com
-* David	Enoma (Data Engineer/ Sys Admin) - david.enoma@ucalgar.ca
+* David	Enoma (Data Engineer/ Sys Admin) - david.enoma@ucalgary.ca
 * Mauricio Moldes - mauricio.moldes@crg.eu
 * Tania	Sepulveda-Morales - sepulvedamortania@gmail.com
