@@ -16,11 +16,56 @@ In practice, this will yield false positives due to noise inherent in SV calling
 ![Workflow](https://github.com/collaborativebioinformatics/SVHack_Mendelian/assets/24875399/6bc8a877-4fc5-4fde-8ac4-567f9d2565c3)
 
 
+# Usage
 
+## Installation
 
-## Pipeline
+`git clone https://github.com/collaborativebioinformatics/SVHack_Mendelian.git`
 
-Snakemake 
+## Dependencies
+
+:warning: Version numbers?
+
+* Sniffles2
+* SURVIVOR
+* bcftools
+* samplot
+
+## Input Files
+
+```
+/working_dir
+|-- reference  # Reference genome
+|   |-- genome.fa
+|-- aligned  # BAM file for each sample
+|   |-- HG002.bam
+|   |-- HG003.bam
+|   |-- HG004.bam
+```
+
+## Output Files
+
+```
+/working_dir
+|-- variants  # Variant calls from Sniffles
+|   |-- HG002.vcf
+|   |-- HG003.vcf
+|   |-- HG004.vcf
+|-- snfs  # SNF files from Sniffles
+|   |-- HG002.snf
+|   |-- HG003.snf
+|   |-- HG004.snf
+|-- merged  # SV calls merged by SURVIVOR
+|   |-- merged_variants.vcf
+|-- analysis  # Mendelian inconsistencies
+|   |-- mendelian_results.txt
+|-- visualization  # Visualizations from samplot
+|   |-- visualization.pdf
+```
+
+## How to run the pipeline
+
+:warning: Example usage
 
 
 ## Initial Results
