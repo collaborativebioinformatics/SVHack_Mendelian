@@ -1,7 +1,7 @@
-# SalsaValentina: SVs detection & filtering pipeline to capture promising candidates responsible of de novo diseases
 
 <img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/WhatsApp Image 2023-08-31 at 20.02.13.jpeg?raw=true">
 
+# SalsaValentina: SVs detection & filtering pipeline to capture promising candidates responsible of de novo diseases
 
 ## Background
 
