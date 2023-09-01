@@ -73,9 +73,8 @@ rule mendelian_analysis:
         bash scripts/annotate_mendel.sh {input.vcf} {input.pdf} {output.vcf_out}
         """
 
-# Rule for visualization using Samplot
-### TODO adjust the samplot script so it accepts the input variables, as indicated below ###
-rule samplot_visualization:
+# Rule for visualization using Samplot for Sniffles
+rule samplot_sniffles:
     input:
         vcf="merged/merged_variants_{method}.vcf",
         bam_child=BAM_CHILD, 
@@ -89,8 +88,25 @@ rule samplot_visualization:
         """
         bash scripts/samplot_sniffles.sh {input.vcf} {input.bam_child} {input.bam_parent1} {input.bam_parent2} {output}
         """
+
+# Rule for visualization using Samplot for Survivor
+rule samplot_survivor:
+    input:
+        vcf="merged/merged_variants_{method}.vcf",
+        bam_child=BAM_CHILD, 
+        bam_parent1=BAM_FATHER,
+        bam_parent2=BAM_MOTHER
+    output:
+        "visualization/visualization_{method}.pdf"
+    conda:
+        "environment.yml"
+    shell:
+        """
+        bash scripts/samplot_sniffles.sh {input.vcf} {input.bam_child} {input.bam_parent1} {input.bam_parent2} {output}
+        """    
+
 # Default rule to run all steps
 rule all:
     input:
-        expand("visualization/visualization_{method}.pdf", method=["sniffles", "survivor"])
+        expand("visualization/visualization_{method}.png", method=["sniffles", "survivor"])
 
