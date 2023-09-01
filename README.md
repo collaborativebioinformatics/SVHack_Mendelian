@@ -9,18 +9,67 @@ Mendelian inconsistency in SV calls can indicate two possibilities: challenges i
 
 ## Method: Verification of de-novo SVs from trios (diseased child; healthy parents) via visualization and local assembly of complex variants
 
-In the case of a diseased child of healthy parents, all de-novo SVs are promising candidates for disease association and thus interesting to know. They can, in principle, be found via mendelian inconsistency analysis. 
-In practice, this will yield false positives due to noise inherent in SV calling and merging. Using publicly available trio(s), we will create a ‘naive’ de-novo SV candidate list, and work on a QC-framework tool that creates a local assembly of every de-novo SV candidate locus in each member of the trio to review the ‘de-novo’ status. 
+Candidate de novo SVs can be identified from trios as variants that do not follow Mendelian inheritance patterns. :warning: Explain this more. True de novo SVs are expected to be rare; however, in practice, a high rate of inconsistent SVs will be identified, indicating false positives or negatives due to noise inherent in SV calling and merging. Using a publicly available trio :warning: Citation, we created a ‘naive’ de novo SV candidate list, and developed a QC-framework tool that enables users to visualize the alignments in inconsistent SV regions across the trio and create a local assembly of every de novo SV candidate locus to aid in confirmation of the variant as either a de novo SV or an incorrect call. 
 
 ## Workflow
 ![Workflow](https://github.com/collaborativebioinformatics/SVHack_Mendelian/assets/24875399/6bc8a877-4fc5-4fde-8ac4-567f9d2565c3)
 
 
+# Usage
 
+## Installation
 
-## Pipeline
+`git clone https://github.com/collaborativebioinformatics/SVHack_Mendelian.git`
 
-Snakemake 
+## Dependencies
+
+:warning: Version numbers?
+
+* Sniffles2
+* SURVIVOR
+* bcftools
+* samplot
+
+## Input Files
+
+```
+/working_dir
+|-- reference  # Reference genome
+|   |-- genome.fa
+|-- aligned  # BAM file for each sample
+|   |-- HG002.bam
+|   |-- HG003.bam
+|   |-- HG004.bam
+```
+
+## Output Files
+
+```
+/working_dir
+|-- variants  # Variant calls from Sniffles
+|   |-- HG002.vcf
+|   |-- HG003.vcf
+|   |-- HG004.vcf
+|-- snfs  # SNF files from Sniffles
+|   |-- HG002.snf
+|   |-- HG003.snf
+|   |-- HG004.snf
+|-- merged  # SV calls merged by SURVIVOR
+|   |-- merged_variants.vcf
+|-- analysis  # Mendelian inconsistencies
+|   |-- mendelian_results.txt
+|-- visualization  # Visualizations from samplot
+|   |-- visualization.pdf
+```
+
+## How to run the pipeline
+
+### Parameters
+
+* SAMPLES: A list of sample names. These should correspond to the names of the input BAM files. For example: `["HG002", "HG003", "HG004"]`
+* REF_GENOME: Path to the reference FASTA file. For example: `reference/genome.fa`
+
+:warning: Example usage
 
 
 ## Initial Results
