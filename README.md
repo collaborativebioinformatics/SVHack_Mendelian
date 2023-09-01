@@ -117,16 +117,17 @@ A mendelian inconsistent deletion was identified in HG002 at chr7:142,786,222-14
 
 <img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/results/ratio_violation_survivor.png?raw=true">
 
-### Figure 2. Potential de nove Deletion at chr7:142786222-142796849 visualized with samplot
-
-<img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/results/de_novo_ours_samplot.png">
-
-### Figure 3. Potential de nove Deletion at chr17:53340465-53340571 visualized with samplot
+### Figure 2. Literature-known de novo Deletion at chr17:53340465-53340571 visualized with samplot
 
 <img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/results/de_novo_literature_lift_samplot.png">
 
+
+### Figure 3. Potential de novo Deletion at chr7:142786222-142796849 visualized with samplot
+
+<img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/results/de_novo_ours_samplot.png">
+
+
 ### Figure 4 
-HG002_chr17.asm.bp.hap1.p_ctg.gfa
 
 Pairwise alignment of hg38 reference (y-axis) vs assembled contig (x-axis) using YASS. 
 Perfect agreement, no SV! 
