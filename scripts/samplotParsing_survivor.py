@@ -35,7 +35,7 @@ for i in range(len(survivor_hg002_3_4)):
             #adding the category and value to the dictionary "information"
             information[key]=values
 
-    #create a row for our dataframe that will include the values we need aka id, position, end
+    #create a row for our dataframe that will include the values we need aka id, chromosome, start, end, type and mendelian violation classification
     new_row=[]
     #add the ID for the variant in order to keep track of which variant we are seeing
     new_row.append(survivor_hg002_3_4.ID[i])
@@ -56,7 +56,6 @@ for i in range(len(survivor_hg002_3_4)):
     df=pd.DataFrame([new_row], columns=['ID', 'CHROM', 'START', 'END', 'TYPE', 'MENDELIAN_VIOLATION'])
     #concat the 2 dataframes
     samplot_survivor_input_hg002_3_4=pd.concat([samplot_survivor_input_hg002_3_4, df])
-#print dataframe to visualize it
-print(samplot_survivor_input_hg002_3_4)
+
 #save the data frame as a csv
 samplot_survivor_input_hg002_3_4.to_csv('samplot_survivor_input_hg002_3_4.csv', index=False)
