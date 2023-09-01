@@ -42,8 +42,8 @@ git clone https://github.com/collaborativebioinformatics/SVHack_Mendelian.git
 ## Input Files
 
 ```
-/working_dir
-|-- reference  # Reference genome
+/working_dir/workflow
+|-- input_data/reference  # Reference genome
 |   |-- genome.fa
 |-- aligned  # BAM file for each sample
 |   |-- HG002.bam
@@ -54,7 +54,7 @@ git clone https://github.com/collaborativebioinformatics/SVHack_Mendelian.git
 ## Output Files
 
 ```
-/working_dir
+/working_dir/workflow/
 |-- variants  # Variant calls from Sniffles
 |   |-- HG002.vcf
 |   |-- HG003.vcf
@@ -73,7 +73,7 @@ git clone https://github.com/collaborativebioinformatics/SVHack_Mendelian.git
 
 ## How to run the pipeline
 
-This is a snakemake pipeline.
+Edit the input paths in workflow/Snake.config.yaml
 
 ### Parameters
 
