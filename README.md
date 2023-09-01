@@ -88,7 +88,7 @@ snakemake --use-conda
 ```
 
 ## Workflow
-![Workflow](https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/workflow.jpg)
+![Workflow](https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/workflow2.jpg)
 
 ## Background
 
