@@ -105,9 +105,9 @@ A mendelian inconsistent deletion was identified in HG002 at chr7:142,786,222-14
 
 ### Figure 1. Comparison of Mendelian Inconsistencies in Sniffles multi-sample calling and single-sample calling followed by SURVIVOR.
 
-<img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/sniffles.png?raw=true">
+<img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/results/ratio_violation_sniffles.png?raw=true">
 
-<img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/survivor.png?raw=true">
+<img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/ratio_violation_survivor.png?raw=true">
 
 ### Figure 2. Potential de nove Deletion at chr7:142786222-142796849 visualized with samplot
 
