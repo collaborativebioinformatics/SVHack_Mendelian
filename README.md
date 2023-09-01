@@ -59,6 +59,7 @@ snakemake --use-conda
 * SURVIVOR
 * bcftools
 * samplot
+* Hifiasm-0.19.6
 
 ## Input Files
 
