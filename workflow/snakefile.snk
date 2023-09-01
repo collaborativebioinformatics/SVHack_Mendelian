@@ -1,13 +1,24 @@
 # Snakefile
 
+configfile: "workflow/config/Snake.config.local.yaml"
+
 # Define parameters
-SAMPLES = ["HG002", "HG003", "HG004"]
-REF_GENOME = "reference/genome.fa"
+SAMPLE_CHILD=config['SAMPLE_CHILD']
+SAMPLE_MOTHER=config['SAMPLE_FATHER']
+SAMPLE_FATHER=config['SAMPLE_MOTHER']
+
+REF_GENOME = config['REF_GENOME']
+
+BAM_CHILD = config['BAM_CHILD']
+BAM_MOTHER = config['BAM_MOTHER']
+BAM_FATHER = config['BAM_FATHER']
+
+
 
 # Rule for Sniffles variant calling
 rule sniffles_call:
     input:
-        bam="aligned/{sample}.bam"
+        bam=lambda wildcards: config['BAM_' + wildcards.sample] # Might need slight adjustments?
     output:
         vcf="variants/{sample}.vcf",
         snf="snfs/{sample}.snf"
@@ -48,28 +59,34 @@ rule survivor_merge:
 # Rule for mendelian inconsistency analysis using BCFtools
 rule mendelian_analysis:
     input:
-        vcf="merged/merged_variants_{method}.vcf"
+        vcf="merged/merged_variants_{method}.vcf",
+        ped=config['TRIO_PEDFILE']
     output:
         "analysis/mendelian_results_{method}.txt"
+        vcf_out="merged/merged_variants_{method}_mendelian.vcf",
     conda:
         "environment.yml"
     shell:
-        "bcftools +mendelian {input.vcf} > {output}"
+        """
+        bash scripts/annotate_mendel.sh {input.vcf} {input.pdf} {output.vcf_out}
+        """
 
 # Rule for visualization using Samplot
+### TODO adjust the samplot script so it accepts the input variables, as indicated below ###
 rule samplot_visualization:
     input:
         vcf="merged/merged_variants_{method}.vcf",
-        bam_child="aligned/HG002.bam",
-        bam_parent1="aligned/HG003.bam",
-        bam_parent2="aligned/HG004.bam"
+        bam_child=BAM_CHILD, 
+        bam_parent1=BAM_FATHER,
+        bam_parent2=BAM_MOTHER
     output:
         "visualization/visualization_{method}.pdf"
     conda:
         "environment.yml"
     shell:
-        "samplot plot -n 1000 -o {output} {input.vcf} {input.bam_child} {input.bam_parent1} {input.bam_parent2}"
-
+        """
+        bash scripts/samplot_sniffles.sh {input.vcf} {input.bam_child} {input.bam_parent1} {input.bam_parent2} {output}
+        """
 # Default rule to run all steps
 rule all:
     input:

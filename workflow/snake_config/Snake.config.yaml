@@ -1,0 +1,11 @@
+REF_GENOME : "reference/genome.fa"
+
+SAMPLE_CHILD : "HG002"
+SAMPLE_FATHER : "HG003"
+SAMPLE_MOTHER : "HG004"
+
+BAM_CHILD : "/path/to/HG002.bam"
+BAM_MOTHER : "/path/to/HG003.bam"
+BAM_FATHER : "/path/to/HG004.bam"
+
+TRIO_PEDFILE : "/path/to/trio.ped"
