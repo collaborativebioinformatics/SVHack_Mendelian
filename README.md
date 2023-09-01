@@ -1,5 +1,16 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=21&pause=1000&color=F76B1E&width=435&lines=Welcome+To+Our+Github+Page;We+are+Team+Salsa+Valentina)](https://git.io/typing-svg)
 
+```
+   _____       _            __      __   _            _   _              
+  / ____|     | |           \ \    / /  | |          | | (_)             
+ | (___   __ _| |___  __ _   \ \  / /_ _| | ___ _ __ | |_ _ _ __   __ _  
+  \___ \ / _` | / __|/ _` |   \ \/ / _` | |/ _ \ '_ \| __| | '_ \ / _` | 
+  ____) | (_| | \__ \ (_| |    \  / (_| | |  __/ | | | |_| | | | | (_| | 
+ |_____/ \__,_|_|___/\__,_|     \/ \__,_|_|\___|_| |_|\__|_|_| |_|\__,_|
+
+                                                                         
+```                                                                         
+
 <img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/WhatsApp Image 2023-08-31 at 20.02.13.jpeg?raw=true">
 
 # SalsaValentina: SVs detection & filtering pipeline to identify putative de novo variants from mendelian inconsistencies. 
