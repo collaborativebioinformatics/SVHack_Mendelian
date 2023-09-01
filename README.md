@@ -65,6 +65,11 @@ In practice, this will yield false positives due to noise inherent in SV calling
 
 ## How to run the pipeline
 
+### Parameters
+
+* SAMPLES: A list of sample names. These should correspond to the names of the input BAM files. For example: `["HG002", "HG003", "HG004"]`
+* REF_GENOME: Path to the reference FASTA file. For example: `reference/genome.fa`
+
 :warning: Example usage
 
 
