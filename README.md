@@ -125,6 +125,13 @@ A mendelian inconsistent deletion was identified in HG002 at chr7:142,786,222-14
 
 <img src="https://github.com/collaborativebioinformatics/SVHack_Mendelian/blob/main/results/de_novo_literature_lift_samplot.png">
 
+### Figure 4 
+HG002_chr17.asm.bp.hap1.p_ctg.gfa
+![image](https://github.com/collaborativebioinformatics/SVHack_Mendelian/assets/24875399/3190f44d-6f88-44fc-84f8-a4e0433cad7e)
+
+### Figure 5 
+
+![c0b211c1-1c1b-483b-b6b1-3b7d89f8d58c](https://github.com/collaborativebioinformatics/SVHack_Mendelian/assets/24875399/4b5692bc-a785-4e43-b20b-b5a08bae1d66)
 
 
 # Please cite our work!
