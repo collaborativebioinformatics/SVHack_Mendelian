@@ -157,7 +157,7 @@ Pairwise alignment of hg38 reference (y-axis) vs assembled contig (x-axis) as ou
 
 * Wolfram Höps (Leader) - wolfram.hoeps@gmail.com
 * David	Enoma (Data Engineer/ Sys Admin) - david.enoma@ucalgary.ca
-* Janet	Doolittle-Hall (Writter) - janet.doolittle-hall@q2labsolutions.com
+* Janet	Doolittle-Hall (Writer) - janet.doolittle-hall@q2labsolutions.com
 * Rajarshi Mondal - rajarshimondal92@gmail.com
 * Alison Diaz-Cuevas - alison.m.b.g@gmail.com
 * Marlon Arciniega-Sanchez - aldarchez26@gmail.com
